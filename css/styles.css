@@ -1,0 +1,403 @@
+body{
+	background-image: url("../img/wallpaper.jpg");
+	background-size: 100% 100%;
+}
+.desktop-layout {
+    background: transparent;
+}
+.webix_dataview_item.desktop-item {
+    border: none;
+}
+.start-menu-item:hover{
+    background: url("../img/icon-bg.png");
+}
+
+/* desktop */
+.desktop-icons{
+    font-size: 13px;
+    height: auto;
+    color: #FFFFFF;
+}
+.desktop-items{
+    background: transparent;
+    overflow-y: hidden !important;
+}
+.desktop-items .webix_list_item,
+.desktop-items .webix_list_item.webix_selected,
+.webix_drag_zone .webix_list_item{
+	padding: 10px 10px 1px 10px;
+	text-align: center;
+	line-height: 17px;
+	border:none;
+}
+.webix_drag_zone{
+	box-shadow: none;
+}
+.webix_drag_zone .webix_list_item.webix_selected{
+	padding: 10px 10px 1px 10px;
+}
+.webix_drag_zone .webix_list_item.webix_selected .desktop-item-inner{
+	box-shadow:  none;
+	background: transparent;
+}
+.webix_drag_over .desktop-item-inner,
+.desktop-items .desktop-item-inner:hover,
+.webix_selected .desktop-item-inner{
+	background: rgba(255,255,255,0.3);
+	box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+.desktop-items .webix_list_item.webix_selected,
+.webix_drag_over.webix_list_item,
+.webix_drag_zone, .webix_drag_zone .webix_list_item.webix_selected{
+	background: transparent;
+}
+.desktop-item-inner{
+	padding: 5px 5px;
+	text-shadow: 1px 1px #000;
+}
+
+
+.winmenu{
+    background: url("../img/menu_bg.png") repeat !important;
+    box-shadow: none !important;
+    border-left: none !important;
+    border-top: 1px solid #313030 !important;
+    border-right: 1px solid #313030 !important;
+    border-bottom: none !important;
+}
+
+.start-menu-list{
+    background: transparent;
+    overflow-y: hidden !important;
+    border: none;
+}
+
+.start-menu-list .webix_list_item{
+    border: none;
+}
+
+.webix_layout_toolbar.webix_toolbar .webix_el_label{
+    color: #000000;
+}
+.window-toolbar{
+    background: #fff !important;
+}
+.popup-window-custom.no_border .webix_win_head {
+	border-bottom-color: #fff;
+}
+.popup-window-custom .webix_fmanager_toolbar{
+	background: #fff;
+}
+
+
+.window-toolbar .webix_el_box{
+    height: 28px !important;
+
+}
+.window-toolbar .webix_el_label{
+	padding:0 5px;
+}
+.window-toolbar .webix_el_label > div{
+	line-height: 18px !important;
+}
+.window-toolbar .webix_el_label img{
+	margin-top: 2px;
+	margin-right: 6px;
+	float: left;
+}
+
+.window-toolbar .webix_el_button{
+    height: 28px !important;
+    margin-top: 0px !important;
+}
+
+.window-toolbar.webix_layout_toolbar .webix_img_btn:hover{
+    background-color: #e5e5e5  !important;
+    height: 28px;
+    border-radius: 0;
+    margin-top: -3px;
+}
+
+.window-toolbar.webix_layout_toolbar .webix_img_btn:focus{
+    background-color: transparent  !important;
+}
+
+.window-toolbar .webix_image{
+    width: 39px !important;
+    height: 11px !important;
+}
+
+.window-toolbar .close-button  .webix_img_btn:hover{
+    background-color: #e81123  !important;
+}
+.window-toolbar .close-button  .webix_img_btn:hover .webix_image{
+    background-image: url(../img/close_button_hover.png) !important;
+}
+
+.window-toolbar .hide-button  .webix_img_btn:hover .webix_image{
+    background-image: url(../img/hide_button_hover.png) !important;
+}
+
+.window-toolbar .resize-button  .webix_img_btn:hover .webix_image{
+    background-image: url(../img/resize_button_hover.png) !important;
+}
+
+.window-toolbar .webix_el_label{
+    font-size: 14px  !important;
+}
+.toolbar-bottom{
+    background: url("../img/panel_bg.png") repeat !important;
+    margin-top: -40px;
+}
+
+.toolbar-bottom .webix_img_btn:hover{
+    background: url("../img/panel_bg.png") repeat !important;
+    border-radius: 0;
+}
+.toolbar-bottom .webix_img_btn:focus{
+    background:transparent !important;
+}
+.toolbar-bottom .webix_el_box{
+    padding: 0 !important;
+    height: 39px !important;
+}
+.toolbar-bottom .webix_el_button{
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    height: 40px !important;
+}
+.toolbar-bottom .webix_image{
+    height: 40px !important;
+    width: 41px !important;
+}
+.time-template{
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.time-template .webix_template{
+    padding-top: 2px;
+}
+
+.user-logo{
+    border-radius: 50px;
+}
+.content-user-logo{
+    background: none;
+    border: none;
+    color: #FFFFFF;
+}
+.content-user-logo .webix_template img{
+	float: left;
+	margin-right: 10px;
+}
+.content-user-logo .webix_template div{
+	line-height: 50px;
+}
+.start-menu-title{
+    color: #B5B5B5;
+	font-size: 13px;
+    margin-left: 7px !important;
+}
+.start-image-menu-title{
+	font-size: 13px;
+    color: #FFFFFF;
+}
+.start-menu-list .webix_list_item{
+	padding: 4px 10px;
+}
+.start-menu-list .webix_list_item.webix_selected{
+    background: transparent;
+    border-bottom: none;
+}
+.start-menu-list.icon .webix_list_item{
+	color: #fff;
+	font-size: 13px;
+}
+.webix_img_btn_abs .webix_icon{
+    margin-left: 0px;
+}
+
+.hide-button{
+    margin-left: 25px !important;
+}
+.resize-button{
+    margin-left: -3px !important;
+}
+.close-button{
+    margin-left: -3px !important;
+}
+.start-menu-item-image{
+    width: 22px;
+    height: 22px;
+}
+.start-menu-item-image-bg{
+    float:left;
+    padding: 5px;
+    background: #1a4588;
+}
+.webix_winmenu_item img{
+    width: 80px;
+}
+
+.gantt_container{
+    border-top: none !important;
+}
+.webix_window{
+    box-shadow: 0 0 1px rgba(255,255,255,0.5);
+}
+.toolbar-icon{
+    margin-right: 3px;
+}
+.toolbar-bottom .toolbar-icon .webix_el_box{
+	border-bottom: 2px solid #b3d9ff;
+}
+.toolbar-icon.active .webix_el_box, .toolbar-icon:hover .webix_el_box{
+	background: url("../img/start_hover_bg.png") repeat !important;
+}
+.toolbar-icon button{
+	padding: 5px 7.5px 4px;
+	border: none;
+
+}
+
+.toolbar-icon img, .toolbar-icon button div{
+	width: 25px;
+	height: 25px;
+
+}
+.toolbar-icon button div, .toolbar-icon .app_icon{
+	margin-top: 1px;
+}
+.toolbar-icon button div{
+	line-height: 25px;
+}
+.toolbar-icon .app_icon{
+	margin-top: 2px;
+}
+
+.toolbar-time{
+   text-align: center;
+}
+.start-menu-item-image-title{
+    margin-left: 5px;
+    float: left;
+}
+
+.header-window-icon{
+    margin-right: 5px;
+}
+
+.blue .webix_winmenu_item_inner, .empty-app .blue,
+.toolbar-icon .blue{
+	background: #297acc;
+}
+.dark-blue .webix_winmenu_item_inner, .empty-app .dark-blue,
+.toolbar-icon .dark-blue{
+	background: #1a4588;
+}
+.light-blue .webix_winmenu_item_inner, .empty-app .light-blue,
+.toolbar-icon .light-blue{
+	background: #00b1f0;
+}
+
+.red .webix_winmenu_item_inner, .empty-app .red,
+.toolbar-icon .red{
+	background: #dc3c00;
+}
+.green .webix_winmenu_item_inner, .empty-app .green,
+.toolbar-icon .green{
+	background: #107c10;
+}
+.violet .webix_winmenu_item_inner, .empty-app .violet,
+.toolbar-icon .violet{
+	background: #80397b;
+}
+.navy .webix_winmenu_item_inner, .empty-app .navy,
+.toolbar-icon .navy{
+	background: #284063;
+}
+
+.empty-app .webix_template{
+	padding: 0;
+}
+.empty-app-inner{
+	width:100%;
+	height:100%;
+
+	text-align: center;
+}
+.empty-app-inner .webix_icon, .empty-app-inner img{
+	position: relative;
+	top: 50%;
+	margin-top: -70px;
+	width: 140px;
+	height: 140px;
+}
+.empty-app-inner .webix_icon{
+	color: #fff;
+	text-align: center;
+	font-size: 90px;
+}
+
+.active_win.app{
+	border-color:#1796b0;
+}
+.active_win.navy{
+	border-color: #284063;
+}
+.active_win.blue{
+	border-color: #297acc;
+}
+.active_win.dark-blue{
+	border-color: #1a4588;
+}
+.active_win.light-blue{
+	border-color: #00b1f0;
+}
+.active_win.red{
+	border-color: #dc3c00;
+}
+.active_win.green{
+	border-color: #107c10;
+}
+.active_win.violet{
+	border-color: #80397b;
+}
+.menu-sys-icon{
+	width: 16px;
+
+	height: 28px;
+	float:left;
+	margin-right: 5px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.menu-sys-icon img{
+	vertical-align: middle;
+}
+
+
+.sing-in-form{
+	/*background: rgba(0,0,0,0.2);*/
+}
+.sing-in-form .webix_template{
+	font-size: 17px;
+}
+.sing-in-form .webix_template img{
+	margin-bottom: 10px;
+}
+.sing-in-form .locked{
+	margin-top: 5px;
+	font-size: 13px;
+	color: #ddd;
+}
+.sing-in-form .webix_view{
+	background: transparent;
+	color: #fff;
+	text-align: center;
+}
+.sing-in-form button{
+	font-size: 16px;
+}

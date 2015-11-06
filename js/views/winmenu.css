@@ -1,0 +1,48 @@
+.webix_winmenu{
+	background: transparent;
+}
+.webix_winmenu .webix_list_item{
+	display: inline-block;
+	border:none;
+	vertical-align: top;
+	padding: 0 5px 5px 0;
+}
+.webix_winmenu .webix_winmenu_item_inner{
+	text-align:center;
+	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.2);
+	cursor:pointer;
+}
+.webix_winmenu_item_inner {
+	height: 100px;
+	position: relative;
+}
+.webix_winmenu_item_inner img{
+	margin-top: 5px;
+	width: 65px;
+	height: 65px;
+}
+.webix_winmenu_item_inner:active{
+	box-shadow: inset 0px 0px 5px 5px rgba(255,255,255,0.5);
+}
+.webix_winmenu_item_inner .title{
+	color: #fff;
+	text-align: left;
+
+	padding-left:10px;
+	line-height: 25px;
+	font-size: 14px;
+	position:absolute;
+	bottom:0;
+}
+.webix_winmenu_item_inner .webix_icon{
+	color: #fff;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 40px;
+}
+.webix_winmenu_item_inner .bg_img{
+	width: 100%;
+	height: 100%;
+}
