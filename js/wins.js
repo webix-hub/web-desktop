@@ -39,12 +39,17 @@ if(window.desktopApp)
 			if(state.height + 40 >= state.maxHeight){
 				state.height = state.maxHeight - 40;
 			}
-			if(state.left+state.width > state.maxWidth){
-				state.left -= state.left+state.width - state.maxWidth;
+			if(this.config.fullscreen)
+				state.top = state.left=0;
+			else{
+				if(state.left+state.width > state.maxWidth){
+					state.left -= state.left+state.width - state.maxWidth;
+				}
+				if(state.top+state.height +40 > state.maxHeight){
+					state.top -= state.top+state.height +40 - state.maxHeight;
+				}
 			}
-			if(state.top+state.height +40 > state.maxHeight){
-				state.top -= state.top+state.height +40 - state.maxHeight;
-			}
+
 		},
 		showEmptyApp: function(obj){
 			var winId = obj.id+"_win";
@@ -129,7 +134,7 @@ if(window.desktopApp)
 
 			}
 			$$(winId).show();
-			if(name == "scheduler" && 	$$("scheduler").getScheduler())
+			if(name == "scheduler" && $$("scheduler").getScheduler())
 				$$("scheduler").getScheduler().updateView();
 			else if(name == "gantt" && window.gantt)
 				gantt.render();
