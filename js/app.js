@@ -349,6 +349,11 @@ desktopApp = {
 				on:{
 					onItemClick:function(){
 						$$(winId).show();
+						if(winId == "scheduler_win" && $$("scheduler").getScheduler())
+							$$("scheduler").getScheduler().updateView();
+						else if(winId == "gantt_win" && window.gantt)
+							gantt.render();
+
 						desktopApp.deleteActiveBg();
 						webix.html.addCss(btn.$view, "active");
 					}

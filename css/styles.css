@@ -244,9 +244,7 @@ body{
 .gantt_container{
     border-top: none !important;
 }
-.webix_window{
-    box-shadow: 0 0 1px rgba(255,255,255,0.5);
-}
+
 .toolbar-icon{
     margin-right: 3px;
 }
@@ -340,7 +338,12 @@ body{
 	text-align: center;
 	font-size: 90px;
 }
-
+.webix_window {
+	box-shadow:none;
+}
+.active_win, .dhx_cal_light{
+	box-shadow: 0 0 8px rgba(0,0,0,0.4) !important;
+}
 .active_win.app{
 	border-color:#1796b0;
 }
@@ -400,4 +403,8 @@ body{
 }
 .sing-in-form button{
 	font-size: 16px;
+}
+
+.dhx_cal_light{
+	border-radius: 0 !important;
 }
