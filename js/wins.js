@@ -39,9 +39,18 @@ if(window.desktopApp)
 			if(state.height + 40 >= state.maxHeight){
 				state.height = state.maxHeight - 40;
 			}
-			if(this.config.fullscreen)
-				state.top = state.left=0;
+			if(this.config.fullscreen){
+				if (!this.config.lastWindowPos)
+					this.config.lastWindowPos = { top: state.top, left: state.left };
+				state.top = state.left = 0;
+			}
 			else{
+				if (this.config.lastWindowPos){
+					var last = this.config.lastWindowPos;
+					delete this.config.lastWindowPos;
+					state.top = last.top;
+					state.left = last.left;
+				}
 				if(state.left+state.width > state.maxWidth){
 					state.left -= state.left+state.width - state.maxWidth;
 				}

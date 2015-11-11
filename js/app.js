@@ -68,7 +68,7 @@ desktopApp = {
 									css: "sing-in-form",
 									rows:[
 										{
-											template: "<img class='user-logo' src='img/user_logo.PNG'/><br/>Yan Tsishko<div class='locked'>Locked</div>",
+											template: "<img class='user-logo' src='img/user_logo.png'/><br/>Yan Tsishko<div class='locked'>Locked</div>",
 											height: 130, borderless: true
 										},
 										{
@@ -170,7 +170,7 @@ desktopApp = {
 									view:"template",
 									css:"content-user-logo",
 									height:60,
-									template:"<div><img class='user-logo' src='img/user_logo.PNG'/> <span>Yan Tsishko</span></div>"
+									template:"<div><img class='user-logo' src='img/user_logo.png'/> <span>Yan Tsishko</span></div>"
 								},
 								{
 									view:"label",
