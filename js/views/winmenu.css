@@ -12,6 +12,10 @@
 	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.2);
 	cursor:pointer;
 }
+/*fix for background composition bug in IE for Win-10*/
+.webix_ie .webix_winmenu .webix_winmenu_item_inner{
+	box-shadow: none;
+}
 .webix_winmenu_item_inner {
 	height: 100px;
 	position: relative;
