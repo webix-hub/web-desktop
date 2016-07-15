@@ -1,5 +1,7 @@
 # Web Desktop Demo
 
+[![Join the chat at https://gitter.im/webix-hub/webix](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/webix-hub/webix) 
+
 You can check the live demo at http://webix.com/demos/web-desktop/
 
 Demo is based on [Webix UI](http://webix.com) widgets.
