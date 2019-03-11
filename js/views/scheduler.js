@@ -33,9 +33,9 @@ webix.protoUI({
         });
     },
     _render_once:function(){
-        webix.require("/libs/scheduler/dhtmlxscheduler.css");
+        webix.require("/web-desktop/libs/scheduler/dhtmlxscheduler.css");
         webix.require([
-            "/libs/scheduler/dhtmlxscheduler.js"
+            "/web-desktop/libs/scheduler/dhtmlxscheduler.js"
         ], function(){
             var scheduler = this._scheduler = window.Scheduler ? Scheduler.getSchedulerInstance() : window.scheduler;
 

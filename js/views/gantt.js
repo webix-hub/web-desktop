@@ -10,8 +10,8 @@ webix.protoUI({
 		}
 	},
     _render_once:function(){
-        webix.require("/libs/gantt/dhtmlxgantt.css");
-        webix.require("/libs/gantt/dhtmlxgantt.js", function(){
+        webix.require("/web-desktop/libs/gantt/dhtmlxgantt.css");
+        webix.require("/web-desktop/libs/gantt/dhtmlxgantt.js", function(){
             if (this.config.init)
                 this.config.init.call(this);
 
