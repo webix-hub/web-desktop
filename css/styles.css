@@ -29,6 +29,7 @@ body{
 	text-align: center;
 	line-height: 17px;
 	border:none;
+	box-shadow:none;
 }
 .webix_drag_zone{
 	box-shadow: none;
@@ -64,6 +65,9 @@ body{
     border-top: 1px solid #313030 !important;
     border-right: 1px solid #313030 !important;
     border-bottom: none !important;
+}
+.winmenu .webix_win_content{
+	padding:8px !important;
 }
 
 .start-menu-list{
@@ -177,7 +181,7 @@ body{
     font-size: 13px;
 }
 .time-template .webix_template{
-    padding-top: 2px;
+    padding-top: 4px;
 }
 
 .user-logo{
@@ -195,12 +199,12 @@ body{
 .content-user-logo .webix_template div{
 	line-height: 50px;
 }
-.start-menu-title{
+.start-menu-title .webix_el_box{
     color: #B5B5B5;
 	font-size: 13px;
     margin-left: 7px !important;
 }
-.start-image-menu-title{
+.start-image-menu-title .webix_el_box{
 	font-size: 13px;
     color: #FFFFFF;
 }
@@ -285,36 +289,6 @@ body{
 
 .header-window-icon{
     margin-right: 5px;
-}
-
-.blue .webix_winmenu_item_inner, .empty-app .blue,
-.toolbar-icon .blue{
-	background: #297acc;
-}
-.dark-blue .webix_winmenu_item_inner, .empty-app .dark-blue,
-.toolbar-icon .dark-blue{
-	background: #1a4588;
-}
-.light-blue .webix_winmenu_item_inner, .empty-app .light-blue,
-.toolbar-icon .light-blue{
-	background: #00b1f0;
-}
-
-.red .webix_winmenu_item_inner, .empty-app .red,
-.toolbar-icon .red{
-	background: #dc3c00;
-}
-.green .webix_winmenu_item_inner, .empty-app .green,
-.toolbar-icon .green{
-	background: #107c10;
-}
-.violet .webix_winmenu_item_inner, .empty-app .violet,
-.toolbar-icon .violet{
-	background: #80397b;
-}
-.navy .webix_winmenu_item_inner, .empty-app .navy,
-.toolbar-icon .navy{
-	background: #284063;
 }
 
 .empty-app .webix_template{

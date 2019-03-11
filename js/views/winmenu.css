@@ -7,28 +7,28 @@
 	vertical-align: top;
 	padding: 0 5px 5px 0;
 }
-.webix_winmenu .webix_winmenu_item_inner{
+.webix_winmenu .webix_winmenu_item{
 	text-align:center;
 	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.2);
 	cursor:pointer;
 }
 /*fix for background composition bug in IE for Win-10*/
-.webix_ie .webix_winmenu .webix_winmenu_item_inner{
+.webix_ie .webix_winmenu .webix_winmenu_item{
 	box-shadow: none;
 }
-.webix_winmenu_item_inner {
+.webix_winmenu_item {
 	height: 100px;
 	position: relative;
 }
-.webix_winmenu_item_inner img{
+.webix_winmenu_item img{
 	margin-top: 5px;
 	width: 65px;
 	height: 65px;
 }
-.webix_winmenu_item_inner:active{
+.webix_winmenu_item:active{
 	box-shadow: inset 0px 0px 5px 5px rgba(255,255,255,0.5);
 }
-.webix_winmenu_item_inner .title{
+.webix_winmenu_item .title{
 	color: #fff;
 	text-align: left;
 
@@ -38,7 +38,7 @@
 	position:absolute;
 	bottom:0;
 }
-.webix_winmenu_item_inner .webix_icon{
+.webix_winmenu_item .webix_icon{
 	color: #fff;
 	width: 100%;
 	height: 80px;
@@ -46,7 +46,29 @@
 	text-align: center;
 	font-size: 40px;
 }
-.webix_winmenu_item_inner .bg_img{
+.webix_winmenu_item .bg_img{
 	width: 100%;
 	height: 100%;
+}
+
+.webix_winmenu_item{
+	position:absolute;
+	text-align:center;
+	box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.2);
+	cursor:pointer;
+}
+.webix_winmenu_item:active{
+	box-shadow: inset 0px 0px 5px 5px rgba(255,255,255,0.5);
+}
+.webix_winmenu_item div{
+	color: #fff;
+	text-align: left;
+	padding-left:10px;
+}
+.webix_winmenu{
+	position:relative;
+	background: transparent;
+}
+.webix_winmenu .webix_scroll_cont{
+	position:static;
 }

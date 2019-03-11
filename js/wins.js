@@ -79,7 +79,7 @@ if(window.desktopApp)
 					height:450,
 					width:800,
 					head: this.ui.toolbar(
-						obj.value+ " ( Not implemented) ",
+						obj.value+ " (Not implemented) ",
 						function () {
 							$$(winId).hide();
 							webix.html.removeCss($$(obj.id+"_button").$view, "active");
@@ -99,12 +99,12 @@ if(window.desktopApp)
 						template: function(obj){
 							var icon = "";
 							if(obj.img){
-								icon = "<img src='"+obj.img+"' align='center'>";
+								icon = "<img src='" + obj.img + "' align='center'>";
 							}
 							else if(obj.icon){
-								icon = "<span class='webix_icon fa-"+obj.icon+"'></span>";
+								icon = "<span class='webix_icon mdi mdi-" + obj.icon + "'></span>";
 							}
-							return "<div class='empty-app-inner "+obj.$css+"'>"+icon+"</div>"
+							return "<div class='empty-app-inner' style='background-color:" + obj.color + ";'>" + icon + "</div>"
 						},
 						data: obj
 					},

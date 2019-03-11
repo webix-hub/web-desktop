@@ -1,7 +1,7 @@
 desktopApp = {
 	buttonCount: 1,
 	init: function(){
-		webix.codebase = "./";
+		webix.env.codebase = "./";
 		this.createLayout();
 		this.createToolbar();
 		this.startTime();
@@ -119,7 +119,7 @@ desktopApp = {
 					}
 				},
 				{},
-				{ view:"template", id:"time", width:75, css:"time-template"}
+				{ view:"template", id:"time", width:95, css:"time-template" }
 			]
 		});
 	},
@@ -138,8 +138,8 @@ desktopApp = {
 		else{
 			rfs = (
 				el.cancelFullScreen ||
-				el.webkitExitFullscreen||
-				el.mozCancelFullScreen||
+				el.webkitExitFullscreen ||
+				el.mozCancelFullScreen ||
 				el.msExitFullscreen
 			);
 		}
@@ -151,8 +151,8 @@ desktopApp = {
 		return false;
 	},
 	createMenu: function(){
-		webix.require("/js/views/winmenu.css");
-		webix.require("/js/views/winmenu.js", function(){
+		webix.require("./js/views/winmenu.css");
+		webix.require("./js/views/winmenu.js", function(){
 			webix.ui({
 				view:"popup",
 				id:"winmenu",
@@ -160,7 +160,8 @@ desktopApp = {
 				css:"winmenu",
 				body: {
 					view:"layout",
-					height:481,
+					height:497,
+					width:902,
 					id:"lay",
 					cols:[
 						{
@@ -245,10 +246,12 @@ desktopApp = {
 									label: "Life at a glance",
 									height:60
 								},
-								{view:"winmenu",
+								{
+									view:"winmenu",
 									borderless:true,
 									data:winmenu_1,
-									width:315,
+									width:315, height:315,
+									xCount:3, yCount:3,
 									on:{
 										onItemClick: function(id){
 											desktopApp.wins.showEmptyApp(this.getItem(id));
@@ -271,7 +274,8 @@ desktopApp = {
 									view:"winmenu",
 									borderless:true,
 									data:winmenu_2,
-									width:315,
+									width:315, height:315,
+									xCount:3, yCount:3,
 									on:{
 										onItemClick: function(id){
 											desktopApp.wins.showEmptyApp(this.getItem(id));
@@ -332,7 +336,7 @@ desktopApp = {
 					template = "<div class='"+name.$css+"'><img class='"+name.$css+"' src='"+name.img+"'></div>";
 				}
 				else if(name.icon){
-					template = "<div class='"+name.$css+"'><span class='webix_icon fa-"+name.icon+"'></span></div>";
+					template = "<div class='"+name.$css+"'><span class='webix_icon mdi mdi-"+name.icon+"'></span></div>";
 				}
 			}
 			else{
