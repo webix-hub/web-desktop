@@ -80,10 +80,10 @@ body{
     border: none;
 }
 
-.webix_layout_toolbar.webix_toolbar .webix_el_label{
+.webix_toolbar .webix_el_label{
     color: #000000;
 }
-.window-toolbar{
+.webix_toolbar.window-toolbar{
     background: #fff !important;
 }
 .popup-window-custom.no_border .webix_win_head {
@@ -94,61 +94,41 @@ body{
 }
 
 
-.window-toolbar .webix_el_box{
-    height: 28px !important;
-
-}
-.window-toolbar .webix_el_label{
-	padding:0 5px;
-}
-.window-toolbar .webix_el_label > div{
-	line-height: 18px !important;
-}
-.window-toolbar .webix_el_label img{
-	margin-top: 2px;
+.webix_toolbar.window-toolbar .webix_el_label img{
+	margin-top: 4px;
 	margin-right: 6px;
+	margin-left:5px;
 	float: left;
 }
 
-.window-toolbar .webix_el_button{
+.webix_toolbar.window-toolbar .webix_el_button{
     height: 28px !important;
     margin-top: 0px !important;
 }
 
-.window-toolbar.webix_layout_toolbar .webix_img_btn:hover{
+.webix_toolbar.window-toolbar .webix_img_btn:hover{
     background-color: #e5e5e5  !important;
     height: 28px;
     border-radius: 0;
     margin-top: -3px;
 }
 
-.window-toolbar.webix_layout_toolbar .webix_img_btn:focus{
+.webix_toolbar.window-toolbar .webix_img_btn:focus{
     background-color: transparent  !important;
 }
 
-.window-toolbar .webix_image{
-    width: 39px !important;
-    height: 11px !important;
+.webix_toolbar.window-toolbar .webix_image{
+	margin-right:0px;
 }
 
-.window-toolbar .close-button  .webix_img_btn:hover{
+.webix_toolbar.window-toolbar .close-button  .webix_img_btn:hover{
     background-color: #e81123  !important;
 }
-.window-toolbar .close-button  .webix_img_btn:hover .webix_image{
-    background-image: url(../img/close_button_hover.png) !important;
-}
 
-.window-toolbar .hide-button  .webix_img_btn:hover .webix_image{
-    background-image: url(../img/hide_button_hover.png) !important;
-}
-
-.window-toolbar .resize-button  .webix_img_btn:hover .webix_image{
-    background-image: url(../img/resize_button_hover.png) !important;
-}
-
-.window-toolbar .webix_el_label{
+.webix_toolbar.window-toolbar .webix_el_label{
     font-size: 14px  !important;
 }
+
 .toolbar-bottom{
     background: url("../img/panel_bg.png") repeat !important;
     margin-top: -40px;
@@ -223,7 +203,7 @@ body{
     margin-left: 0px;
 }
 
-.hide-button{
+/* .hide-button{
     margin-left: 25px !important;
 }
 .resize-button{
@@ -231,7 +211,7 @@ body{
 }
 .close-button{
     margin-left: -3px !important;
-}
+} */
 .start-menu-item-image{
     width: 22px;
     height: 22px;
@@ -285,10 +265,6 @@ body{
 .start-menu-item-image-title{
     margin-left: 5px;
     float: left;
-}
-
-.header-window-icon{
-    margin-right: 5px;
 }
 
 .empty-app .webix_template{
@@ -357,7 +333,7 @@ body{
 
 
 .sing-in-form{
-	/*background: rgba(0,0,0,0.2);*/
+	background: rgba(0,0,0,0.2);
 }
 .sing-in-form .webix_template{
 	font-size: 17px;

@@ -105,6 +105,7 @@ desktopApp = {
 				{
 					view: "button",
 					id: "start_button",
+					css:"webix_transparent",
 					type: "image",
 					image: "img/start.png",
 					width: 72,

@@ -155,15 +155,20 @@ if(window.desktopApp)
 					view:"toolbar",
 					height:28,
 					css:"window-toolbar",
+					margin:0,
+					padding:0,
 					cols:[
-						{view:"label", label: "<img src='img/window-icon.png' class='header-window-icon'/> "+title },
+						{
+							view:"label",
+							label: "<img src='img/window-icon.png' class='header-window-icon'/> "+title
+						},
 						{
 							view: "button",
 							type: "image",
 							image: "img/hide_button.png",
-							width:45,
+							width:36,
 							height:20,
-							css:"hide-button",
+							css:"hide-button webix_transparent",
 							on:{
 								onItemClick: onHide
 							}
@@ -172,9 +177,9 @@ if(window.desktopApp)
 							view: "button",
 							type: "image",
 							image: "img/resize_button.png",
-							width:45,
+							width:36,
 							height:20,
-							css:"resize-button",
+							css:"resize-button webix_transparent",
 							on: {
 								onItemClick: onMinMax
 							}
@@ -183,9 +188,9 @@ if(window.desktopApp)
 							view: "button",
 							type: "image",
 							image: "img/close_button.png",
-							width:45,
+							width:36,
 							height:20,
-							css:"close-button",
+							css:"close-button webix_transparent",
 							on: {
 								onItemClick: onClose
 							}
